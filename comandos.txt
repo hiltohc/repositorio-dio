@@ -1,0 +1,80 @@
+Configuração inicial:
+
+*****Configurar o nome de usuário e email:***
+
+git config --global user.name "Seu Nome"
+git config --global user.email "seu@email.com"
+
+
+*****Clonar um repositório do GitHub:*****
+
+git clone https://github.com/nome-de-usuario/nome-do-repositorio.git
+Trabalhar com mudanças:
+
+*****Adicionar alterações para o próximo commit:*****
+
+git add nome-do-arquivo
+
+*****Confirmar as alterações com uma mensagem:*****
+
+git commit -m "Mensagem descritiva"
+
+
+
+**********Rastreamento de status e histórico:**********
+
+---Verificar o status das alterações:
+git status
+
+
+---Visualizar o histórico de commits:
+
+
+git log
+
+
+*****Trabalhando com ramos (branches):*****
+
+----Criar um novo ramo e mudar para ele:
+
+git checkout -b nome-do-ramo
+
+
+----Mudar para um ramo existente:
+
+git checkout nome-do-ramo
+
+----Mesclar um ramo em outro:
+
+git merge nome-do-ramo
+
+
+
+*****Atualização remota:*****
+
+----Enviar alterações para o repositório remoto (GitHub):
+
+git push origin nome-do-ramo
+
+----Atualizar seu repositório local com as alterações remotas:
+
+git pull origin nome-do-ramo
+
+
+**********Colaboração:**********
+
+----Adicionar um repositório remoto:
+
+git remote add nome-remoto URL-do-repositorio-remoto
+
+--Obter as alterações de um repositório remoto:
+
+git fetch nome-remoto
+
+---Desfazer alterações locais em um arquivo:
+git checkout nome-do-arquivo
+
+
+---Reverter um commit:
+
+git revert ID-do-commit
